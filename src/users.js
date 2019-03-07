@@ -24,9 +24,9 @@ class Users extends Component {
 
       handleOnClick = (event) => {
    
-        event.preventDefault() //blokowanie odswiezania strony
+        event.preventDefault() 
 
-        let usersLocal = this.state.users; //pobieramy ilosc dotychczasowych userow
+        let usersLocal = this.state.users; //pobieram ilosc dotychczasowych userow
 
         let newUser = {  // potrzebne do edytowania i usuwania (id)
             id: Date.now(),
