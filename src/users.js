@@ -26,16 +26,16 @@ class Users extends Component {
    
         event.preventDefault() 
 
-        let usersLocal = this.state.users; //pobieram ilosc dotychczasowych userow
+        let usersLocal = this.state.users; // amount of users
 
-        let newUser = {  // potrzebne do edytowania i usuwania (id)
+        let newUser = {  // add and remove id
             id: Date.now(),
             name: this.state.inputValue
         }
         
-        usersLocal.push(newUser) //dodajemy nowego usera do lokalnej instancji this.state.users
+        usersLocal.push(newUser) //add new user to local instance (this.state.users)
 
-        this.setState({ //update globalnej instancji this.state.users
+        this.setState({ //update of global instance (this.state.users)
             inputValue: '',
             users: usersLocal
         })
